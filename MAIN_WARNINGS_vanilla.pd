@@ -1,0 +1,97 @@
+#N canvas 102 161 583 447 10;
+#X msg 151 167 prev;
+#X msg 262 167 next;
+#N canvas 433 184 420 196 net_init 0;
+#X obj 126 45 loadbang;
+#X obj 126 118 outlet;
+#X symbolatom 126 76 30 0 0 0 - - -;
+#X obj 186 45 preset_node;
+#X msg 16 77 symbol localhost;
+#X msg 126 97 disconnect \, connect \$1 7000;
+#X connect 0 0 4 0;
+#X connect 2 0 5 0;
+#X connect 3 0 2 0;
+#X connect 4 0 5 0;
+#X connect 5 0 1 0;
+#X restore 51 309 pd net_init;
+#X obj 40 262 list prepend send;
+#X obj 40 283 list trim;
+#X obj 416 213 preset_hub %hidden% %node% 1 10 %preset% 1 70 %node%
+1 12 %preset% 1 70 %node% 2 14 4 %preset% 1 localhost %node% 1 15 %preset%
+1 70 %node% 1 17 %preset% 1 70 %node% 1 19 %preset% 1 70 %node% 1 21
+%preset% 1 1000 %node% 1 23 %preset% 1 1000 %node% 2 8 2 %node% 1 25
+%preset% 1 1000 %node% 1 27 %preset% 1 1000 %node% 1 29 %preset% 1
+1000 %node% 1 31 %preset% 1 100 %node% 1 92 %node% 1 38 %preset% 1
+regina %node% 1 40 %preset% 1 x %node% 1 42 %preset% 1 lilith %node%
+1 35 %preset% 1 marcus %node% 1 101 %node% 2 36 6 %preset% 1 @mouth
+%node% 1 94 %preset% 1 regina %node% 1 96 %preset% 1 x %node% 1 98
+%preset% 1 lilith %node% 1 44 %preset% 1 mortimer %node% 1 53 %preset%
+1 20 %node% 2 3 4 %preset% 1 192.168.1.100 %node% 2 11 2;
+#X msg 416 186 store 1;
+#X msg 472 186 recall 1;
+#X obj 472 164 loadbang;
+#X obj 155 262 nbx 3 152 0 999 0 0 empty empty empty 0 -8 0 121 -262144
+-1 -1 130 256;
+#X text 164 329 CURRENT;
+#X obj 40 36 bng 105 250 50 0 empty empty RESET 24 54 0 20 -262144
+-1 -260097;
+#X obj 151 36 bng 105 250 50 0 empty empty PREVIOUS 5 54 0 20 -262144
+-1 -260097;
+#X obj 262 36 bng 105 250 50 0 empty empty NEXT 30 54 0 20 -262144
+-1 -260097;
+#X obj 40 146 t b 0;
+#X msg 40 167 start;
+#X text 392 31 Pd-L2Ork->OPERACRAFTSubtitles Interfaceby Ivica Ico
+Bukvic(c) 2013 <ico@vt.edu>;
+#N canvas 433 184 450 300 keyboard 0;
+#X obj 166 239 outlet;
+#X obj 217 239 outlet;
+#X obj 166 40 keyname;
+#X obj 205 97 sel Left Right;
+#X obj 166 159 &&;
+#X msg 205 118 1;
+#X obj 217 159 &&;
+#X msg 266 118 1;
+#X obj 166 190 sel 1;
+#X obj 217 190 sel 1;
+#X obj 205 61 t a 0;
+#X connect 2 0 4 0;
+#X connect 2 0 6 0;
+#X connect 2 1 10 0;
+#X connect 3 0 5 0;
+#X connect 3 1 7 0;
+#X connect 4 0 8 0;
+#X connect 5 0 4 1;
+#X connect 6 0 9 0;
+#X connect 7 0 6 1;
+#X connect 8 0 0 0;
+#X connect 9 0 1 0;
+#X connect 10 0 3 0;
+#X connect 10 1 6 1;
+#X connect 10 1 4 1;
+#X restore 151 15 pd keyboard;
+#X text 391 102 USE LEFT AND RIGHT ARROWSTO NAVIGATE. CLICK ONRESET
+TO RESET.;
+#X obj 40 221 coll warnings.txt;
+#C restore;
+#X obj 40 334 netsend 1;
+#X obj 8 378 print;
+#X connect 0 0 19 0;
+#X connect 1 0 19 0;
+#X connect 2 0 20 0;
+#X connect 3 0 4 0;
+#X connect 4 0 20 0;
+#X connect 4 0 21 0;
+#X connect 6 0 5 0;
+#X connect 7 0 5 0;
+#X connect 8 0 7 0;
+#X connect 11 0 14 0;
+#X connect 12 0 0 0;
+#X connect 13 0 1 0;
+#X connect 14 0 15 0;
+#X connect 14 1 9 0;
+#X connect 15 0 19 0;
+#X connect 17 0 12 0;
+#X connect 17 1 13 0;
+#X connect 19 0 3 0;
+#X connect 19 1 9 0;
