@@ -1,0 +1,14 @@
+C:\Users\OPERAcraft\Documents\Kinect\SkeletonBasics-WPF-new\bin\Debug\SkeletonBasics-WPF.exe
+C:\Users\OPERAcraft\Documents\Kinect\SkeletonBasics-WPF-new\bin\Debug\SkeletonBasics-WPF.pdb
+C:\Users\OPERAcraft\Documents\Kinect\SkeletonBasics-WPF-new\bin\Debug\Microsoft.Kinect.dll
+C:\Users\OPERAcraft\Documents\Kinect\SkeletonBasics-WPF-new\bin\Debug\Microsoft.Kinect.xml
+C:\Users\OPERAcraft\Documents\Kinect\SkeletonBasics-WPF-new\obj\Debug\SkeletonBasics-WPF.csprojResolveAssemblyReference.cache
+C:\Users\OPERAcraft\Documents\Kinect\SkeletonBasics-WPF-new\obj\Debug\MainWindow.baml
+C:\Users\OPERAcraft\Documents\Kinect\SkeletonBasics-WPF-new\obj\Debug\MainWindow.g.cs
+C:\Users\OPERAcraft\Documents\Kinect\SkeletonBasics-WPF-new\obj\Debug\App.g.cs
+C:\Users\OPERAcraft\Documents\Kinect\SkeletonBasics-WPF-new\obj\Debug\SkeletonBasics-WPF_MarkupCompile.cache
+C:\Users\OPERAcraft\Documents\Kinect\SkeletonBasics-WPF-new\obj\Debug\SkeletonBasics-WPF.g.resources
+C:\Users\OPERAcraft\Documents\Kinect\SkeletonBasics-WPF-new\obj\Debug\Microsoft.Samples.Kinect.SkeletonBasics.Properties.Resources.resources
+C:\Users\OPERAcraft\Documents\Kinect\SkeletonBasics-WPF-new\obj\Debug\SkeletonBasics-WPF.csproj.GenerateResource.Cache
+C:\Users\OPERAcraft\Documents\Kinect\SkeletonBasics-WPF-new\obj\Debug\SkeletonBasics-WPF.exe
+C:\Users\OPERAcraft\Documents\Kinect\SkeletonBasics-WPF-new\obj\Debug\SkeletonBasics-WPF.pdb
